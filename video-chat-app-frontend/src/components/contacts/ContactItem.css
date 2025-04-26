@@ -1,0 +1,115 @@
+/* ContactItem.css */
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .contact-item:hover {
+    background-color: #f5f8fa;
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .contact-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+  
+  .contact-details {
+    overflow: hidden;
+  }
+  
+  .contact-name {
+    font-weight: 600;
+    margin-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .contact-email {
+    font-size: 12px;
+    color: #7f8c8d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .contact-status {
+    font-size: 12px;
+    color: #e67e22;
+    margin-top: 2px;
+  }
+  
+  .contact-actions {
+    display: flex;
+    gap: 8px;
+    margin-left: 8px;
+  }
+  
+  .contact-action {
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .contact-action.call {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .contact-action.call:hover {
+    background-color: #27ae60;
+  }
+  
+  .contact-action.remove {
+    background-color: transparent;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+  }
+  
+  .contact-action.remove:hover {
+    background-color: #ffebee;
+  }
+  
+  .contact-action.accept {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .contact-action.accept:hover {
+    background-color: #27ae60;
+  }
+  
+  .contact-action.reject,
+  .contact-action.cancel {
+    background-color: transparent;
+    border: 1px solid #e74c3c;
+    color: #e74c3c;
+  }
+  
+  .contact-action.reject:hover,
+  .contact-action.cancel:hover {
+    background-color: #ffebee;
+  }
